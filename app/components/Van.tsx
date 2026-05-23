@@ -5,10 +5,11 @@ import { OrbitControls } from "@react-three/drei";
 import { FBXLoader } from "three-stdlib";
 import { useLoader } from "@react-three/fiber";
 import { useRef } from "react";
+import type { Object3D } from "three";
 
 function Model() {
   const fbx = useLoader(FBXLoader, "/models/van.FBX");
-  const ref = useRef<any>();
+  const ref = useRef<Object3D | null>(null);
 
  useFrame(({ mouse }) => {
   if (ref.current) {
