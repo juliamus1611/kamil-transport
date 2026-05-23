@@ -23,14 +23,14 @@ function Model() {
       ref={ref}
       object={fbx}
       scale={0.05}
-      position={[0, -1, 0]}
+      position={[0, -1.85, 0]}
     />
   );
 }
 
 export default function Van() {
   return (
-    <div className="h-[500px] w-full">
+    <div className="h-[420px] w-full md:h-[500px]">
       <Canvas camera={{ position: [0, 1, 5] }}>
         
         <ambientLight intensity={0.5} />

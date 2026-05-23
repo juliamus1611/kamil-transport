@@ -688,7 +688,7 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="absolute bottom-0 z-20 w-full">
+          <div className="absolute -bottom-28 z-20 w-full md:-bottom-36">
             <Van />
           </div>
         </section>
